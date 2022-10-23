@@ -159,7 +159,7 @@ header .main-menu ul li:hover {
     height: 100%;
     display: flex;
     margin: 0 auto;
-    background: url(assets/image/image_one.jpg) center center;
+    background: url(../image/image_one.jpg) center center;
     background-size: cover;
     background-attachment: fixed;
     flex-direction: column;
