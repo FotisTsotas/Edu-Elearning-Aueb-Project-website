@@ -365,7 +365,7 @@ margin: 0px 70px 200px 60px;
 }
 
 .mountain{
-  background: url(assets/image/image_mountain.jpg) center center;
+  background: url(../image/image_mountain.jpg) center center;
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -376,7 +376,7 @@ margin: 0px 70px 200px 60px;
 }
 
 .beach{
-  background: url(assets/image/image_beach.jpg) center center;
+  background: url(../image/image_beach.jpg) center center;
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -386,7 +386,7 @@ margin: 0px 70px 200px 60px;
   justify-content: center;
 }
 .activs{
-  background: url(assets/image/image_activs.jpg) center center;
+  background: url(../image/image_activs.jpg) center center;
   display: flex;
   flex-direction: column;
   background-size: cover;
