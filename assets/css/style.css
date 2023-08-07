@@ -1,30 +1,67 @@
-body{
+body {
   margin: 0;
   padding: 0;
   background: #fff;
   box-sizing: border-box;
-   font: 15px Arial, sans-serif;
-   color: teal;
+  font: 15px Arial, sans-serif;
+  color: teal;
 }
 
-h1{
+h1 {
   font-size: 40px;
 }
+
 p {
-    font-size: 25px;
+  font-size: 25px;
 }
-.col-1{width: 8.33%;}
-.col-2{width: 16.66%;}
-.col-3{width: 25%;}
-.col-4{width: 33.33%;}
-.col-5{width: 41.66%;}
-.col-6{width: 50%;}
-.col-7{width: 58.33%;}
-.col-8{width: 66.66%;}
-.col-9{width: 75%;}
-.col-10{width: 83.33%;}
-.col-11{width: 91.66%;}
-.col-12{width: 100%;}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
 
 header {
   width: 100%;
@@ -35,40 +72,45 @@ header {
   position: fixed;
   z-index: 999;
 }
-header fieldset{
-border: none;
-margin: 0;
-display: flex;
-flex-direction: row;
+
+header fieldset {
+  border: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
 }
+
 header .title {
   display: flex;
-flex-direction: column;
-justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
+
 header .logo a img {
-width: 150px;
-height: auto;
-margin-left: 20px;
+  width: 150px;
+  height: auto;
+  margin-left: 20px;
 }
 
-header .title h1{
+header .title h1 {
   font-size: 35px;
-  margin: 10px  30px;
+  margin: 10px 30px;
 }
 
-header .title h2{
-  margin: 10px  30px;
+header .title h2 {
+  margin: 10px 30px;
   font-size: 25px;
 
 }
+
 header .main-menu {
   display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-overflow:hidden;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
 }
+
 header .main-menu ul {
   display: flex;
   flex-direction: row;
@@ -76,39 +118,48 @@ header .main-menu ul {
   color: teal;
   padding: 0;
   text-align: center;
-  }
+}
+
 header .main-menu ul li {
-    margin: 0px 0px;
-    font-size: 22px;
-    padding: 10px;
+  margin: 0px 0px;
+  font-size: 22px;
+  padding: 10px;
 
 }
+
 header .main-menu ul li a {
   text-decoration: none;
   color: teal;
 }
+
 header .main-menu ul li a:visited,
-header .main-menu ul li a:active  {
+header .main-menu ul li a:active {
   color: teal;
 }
+
 header .main-menu ul li:hover {
   background: #d2e5f5;
   border-radius: 3px;
 }
+
 /* ===========================button========================= */
-.visible{
+.visible {
   display: block;
 }
-.hidden{
+
+.hidden {
   display: none;
 }
+
 .menu-button {
   display: inline-block;
   cursor: pointer;
   display: none;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: teal;
@@ -121,20 +172,25 @@ header .main-menu ul li:hover {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;
+}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+
 /* ===========================/button========================= */
 .row {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.visible{
+
+.visible {
   display: block !important;
 }
+
 .topButtonRed {
   display: none;
   position: fixed;
@@ -154,29 +210,38 @@ header .main-menu ul li:hover {
 .topButtonRed:hover {
   background-color: red;
 }
+
 /* =======index-home ========== */
-.container-home-page{
-    height: 100%;
-    display: flex;
-    margin: 0 auto;
-    background: url(../image/image_one.jpg) center center;
-    background-size: cover;
-    background-attachment: fixed;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.container-home-page {
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  background: url(../image/image_one.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.section{
+
+.section {
   position: relative;
   animation-name: sectionHeroDown;
   animation-duration: 3s;
   animation-timing-function: cubic-bezier(0.62, 0.31, 0.68, 0.38);
   animation-fill-mode: forwards;
 }
+
 @keyframes sectionHeroDown {
-  from {top: -2em;}
-   to {top: 6em;}
+  from {
+    top: -2em;
+  }
+
+  to {
+    top: 6em;
+  }
 }
+
 .section-title {
   height: 150px;
   color: #fff;
@@ -186,18 +251,21 @@ header .main-menu ul li:hover {
   align-items: center;
 
 }
+
 .section-title h1 {
   font-size: 50px;
 }
+
 .section-article {
-    color: #fff;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    line-height: 1.6;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  line-height: 1.6;
 }
+
 /* ===============1nd child================ */
-.row .container:nth-child(1){
+.row .container:nth-child(1) {
   height: 100%;
   display: flex;
   margin: 0 auto;
@@ -208,53 +276,64 @@ header .main-menu ul li:hover {
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .tourm-sights {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-.tourism-section-title{
+
+.tourism-section-title {
   font-size: 20px;
   line-height: 1.5;
   margin: 10px 70px 0 60px;
 }
-.clear{
+
+.clear {
   clear: both;
 }
-.nafpaktos-image{
+
+.nafpaktos-image {
   display: flex;
   justify-content: center;
   margin-top: 100px;
   flex-direction: column;
   position: relative;
 }
-.nafpaktos-image img{
+
+.nafpaktos-image img {
   height: auto;
   width: 100%;
 }
-.nafpaktos-image img:hover{
+
+.nafpaktos-image img:hover {
   cursor: zoom-in;
 }
+
 button {
-    padding: 13px;
-    float: right;
-    color: teal;
-    font-size: 21px;
-    border: 1px solid teal;
-    border-radius: 23px;
+  padding: 13px;
+  float: right;
+  color: teal;
+  font-size: 21px;
+  border: 1px solid teal;
+  border-radius: 23px;
 }
-button:hover{
+
+button:hover {
   background: #c1c1c1;
   cursor: pointer;
 }
-.sights{
+
+.sights {
   display: none;
   font-size: 17px;
   line-height: 1.5;
   margin: 0 auto;
 }
+
 .sights p {
-    font-size: 21px;
+  font-size: 21px;
 }
+
 .modal {
   display: none;
   position: fixed;
@@ -265,8 +344,8 @@ button:hover{
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -277,6 +356,7 @@ button:hover{
   margin: 55px auto;
   cursor: zoom-out !important;
 }
+
 #caption {
   margin: auto;
   display: block;
@@ -288,17 +368,24 @@ button:hover{
   height: 150px;
 }
 
-.modal-content, #caption {
+.modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
+
 /* ============== child-2============== */
-.row .container:nth-child(2){
+.row .container:nth-child(2) {
   height: 100%;
   display: flex;
   margin: 0 auto;
@@ -309,7 +396,8 @@ button:hover{
   align-items: flex-start;
   justify-content: center;
 }
-.choice-row{
+
+.choice-row {
   font-size: 17px;
   line-height: 1.5;
   margin: 0 auto;
@@ -319,18 +407,20 @@ button:hover{
   font-size: 21px;
 }
 
-.choice{
+.choice {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 100px;
 }
+
 .choice-section-title {
   font-size: 21px;
-line-height: 1.5;
-margin: 0px 70px 200px 60px;
+  line-height: 1.5;
+  margin: 0px 70px 200px 60px;
 }
-.nafpaktos-image-2{
+
+.nafpaktos-image-2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -338,33 +428,36 @@ margin: 0px 70px 200px 60px;
 }
 
 .nafpaktos-image-2 img {
-    height: auto;
-    width: 100%;
-}
-.nafpaktos-image-2 img:hover{
-  cursor: zoom-in;
-}
-/* ============== child-3============== */
-.row .container:nth-child(3){
-    height: 100%;
-    display: flex;
-    margin: 0 auto;
-    background: #fff;
-    color: teal;
-    background-attachment: fixed;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.escape-row {
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-    text-align: center;
-    margin: 350px 0 100px 0;
+  height: auto;
+  width: 100%;
 }
 
-.mountain{
+.nafpaktos-image-2 img:hover {
+  cursor: zoom-in;
+}
+
+/* ============== child-3============== */
+.row .container:nth-child(3) {
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  background: #fff;
+  color: teal;
+  background-attachment: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.escape-row {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  text-align: center;
+  margin: 350px 0 100px 0;
+}
+
+.mountain {
   background: url(../image/image_mountain.jpg) center center;
   display: flex;
   flex-direction: column;
@@ -375,7 +468,7 @@ margin: 0px 70px 200px 60px;
   justify-content: center;
 }
 
-.beach{
+.beach {
   background: url(../image/image_beach.jpg) center center;
   display: flex;
   flex-direction: column;
@@ -385,7 +478,8 @@ margin: 0px 70px 200px 60px;
   margin: 0 10px;
   justify-content: center;
 }
-.activs{
+
+.activs {
   background: url(../image/image_activs.jpg) center center;
   display: flex;
   flex-direction: column;
@@ -395,62 +489,78 @@ margin: 0px 70px 200px 60px;
   margin: 0 10px;
   justify-content: center;
 }
+
 .mountain:hover,
 .beach:hover,
-.activs:hover{
+.activs:hover {
   cursor: pointer;
 
 }
-.animationBox{
-animation-name: shoadowBoxAnimation;
-animation-duration: 3s;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
+
+.animationBox {
+  animation-name: shoadowBoxAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 
 }
 
 @keyframes shoadowBoxAnimation {
-0%{ box-shadow:1px -1px 20px 11px grey;}
-50% { box-shadow:1px -1px 20px 18px grey;}
-100%{ box-shadow:1px -1px 20px 11px grey;}
+  0% {
+    box-shadow: 1px -1px 20px 11px grey;
+  }
+
+  50% {
+    box-shadow: 1px -1px 20px 18px grey;
+  }
+
+  100% {
+    box-shadow: 1px -1px 20px 11px grey;
+  }
 
 }
-.descriptions > div {
+
+.descriptions>div {
   margin: 100px;
 }
-.descriptions p{
+
+.descriptions p {
   font-size: 21px
 }
+
 .descriptions h1 {
-    text-align: center;
+  text-align: center;
 }
+
 button#CloseBtn {
-    padding: 16px;
-    float: right;
-    color: teal;
-    font-size: 23px;
-    border: 1px solid teal;
-    border-radius: 228px;
+  padding: 16px;
+  float: right;
+  color: teal;
+  font-size: 23px;
+  border: 1px solid teal;
+  border-radius: 228px;
 }
+
 /* ============== child-4============== */
 
 .row .container:nth-child(4) {
-    height: 100%;
-    display: flex;
-    margin: 0 auto;
-    background: #fff;
-    color: teal;
-    background-attachment: fixed;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 18px;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  background: #fff;
+  color: teal;
+  background-attachment: fixed;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 18px;
 }
 
 .row .container:nth-child(4) h1 {
   font-size: 40px;
 }
-.info-text{
+
+.info-text {
   display: flex;
   flex-direction: row;
   font-size: 22px;
@@ -458,24 +568,27 @@ button#CloseBtn {
 }
 
 .info-text h2 {
-margin: 70px 0 20px 0;
+  margin: 70px 0 20px 0;
 }
+
 .weather span {
-    margin-right: 10px;
-    margin-left: 4px;
+  margin-right: 10px;
+  margin-left: 4px;
 }
+
 .current-weather {
   display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.cityName-country ,
+
+.cityName-country,
 .icon-and-current,
 .temp-real,
-.temp-noReal ,
+.temp-noReal,
 .humidity,
-.wind{
+.wind {
   display: flex;
   flex-direction: row;
   margin: 15px 0 0 0;
@@ -483,25 +596,30 @@ align-items: center;
   justify-content: center;
   text-align: left;
 }
+
 .telephones {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  align-items: center;
 }
+
 .telephones h3 {
-    margin: 0;
-    font-size: 25px;
+  margin: 0;
+  font-size: 25px;
 }
+
 .telephones p {
   font-size: 17px;
 }
+
 .weather-box {
-    background: teal;
-    color: white;
-    padding: 100px;
+  background: teal;
+  color: white;
+  padding: 100px;
 
 }
+
 footer {
   background: teal;
   color: #fff;
